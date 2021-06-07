@@ -4,6 +4,8 @@ If you are not familiar with linters and GitHub Actions, read [root level README
 
 ## Set-up GitHub Actions
 
+
+
 This GitHub Action is going to run [ESLint](https://eslint.org/) and [Stylelint](https://stylelint.io/) to help you find style issues.
 
 [Stylelint](https://stylelint.io/) is a linter for your stylesheets that helps you avoid errors and enforce conventions.
