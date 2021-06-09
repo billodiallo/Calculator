@@ -19,3 +19,8 @@ Button.Prototypes = {
     color : Prototypes.bool;
     number : Prototypes.array;   
 };
+
+Button.defaultProps = {
+    number: 0,
+    color: false,
+  };
