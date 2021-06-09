@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Button from './Button';
 
-class ButtonPanel extends React.Component {
+  export default class ButtonPanel extends Component {
     constructor(props) {
         super(props);
         this.props = props;
@@ -15,6 +15,30 @@ class ButtonPanel extends React.Component {
           ],
         };
       }
-}
 
-export default ButtonPanel;
+      render () {
+        let buttonsView = [];
+
+        const { buttonGroups } = this.state;
+        buttonsView = (
+          <div>
+            {buttonGroups.map(group => (
+              <div className="key-list" key={`${group.buttons.join('-')}`}>
+                {group.buttons.map(button => (
+                  <Button
+                    key={`btn-${button}`}
+                    buttonName={button}
+                  />
+                ))}
+              </div>
+            ))}
+          </div>
+        );
+        return (
+          <div>
+            {buttonsView}
+          </div>
+        );
+      }
+          
+      }
