@@ -3,7 +3,7 @@ import Prototypes, { number } from 'prop-types';
 
 class Button extends React.Component {
     render(){
-        constant {number,color} = this.props;
+        constant { number, color } = this.props;
         return (
             <button type="button" className={color}>
                 {' '}
@@ -24,3 +24,5 @@ Button.defaultProps = {
     number: 0,
     color: false,
   };
+
+  export default Button;
