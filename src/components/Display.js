@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ProtoTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 class Display extends Component {
     constructor(props){
@@ -12,20 +12,19 @@ class Display extends Component {
         // eslint-disable-next-line react/prop-types
         const { result } = this.props;
         return (
-            <div className= 'result-card'>
-                <p className='input-res'>2 * 0</p>
-                <p className="cal-res">{result}</p>
-            </div>
+                <p >{result}</p>
+           
         );
     }
 }
 
-Display.prototypes = {
-    result: ProtoTypes.string,
-  };
-  
-  Display.defaultProps = {
-    result: '0',
-  };
+    Display.defaultProps = {
+        result: '0',
+      };
+      
+      Display.propTypes = {
+        result: PropTypes.string,
+      };
+      
   
   export default Display;
