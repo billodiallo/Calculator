@@ -10,7 +10,12 @@ class Button extends React.Component {
                 {number}
                 {' '}
             </button>
-        )
+        );
 
     }
 }
+
+Button.Prototypes = {
+    color : Prototypes.bool;
+    number : Prototypes.array;   
+};
