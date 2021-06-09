@@ -16,8 +16,8 @@ class Button extends React.Component {
 }
 
 Button.Prototypes = {
-    color : Prototypes.bool;
-    number : Prototypes.array;   
+    color : Prototypes.bool,
+    number : Prototypes.array,  
 };
 
 Button.defaultProps = {
