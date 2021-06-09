@@ -1,7 +1,13 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ProtoTypes from 'prop-types';
 
-class Display extends React.Component {
+class Display extends Component {
+    constructor(props){
+        super(props);
+    }
+
+
+
     render() {
         // eslint-disable-next-line react/prop-types
         const { result } = this.props;
