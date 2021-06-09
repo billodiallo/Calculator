@@ -1,31 +1,21 @@
-/* eslint-disable react/prefer-stateless-function */
-/* eslint-disable react/prop-types */
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+export default class Button extends Component {
+  constructor(props) {
+    super(props);
+    this.props = props;
+  }
 
-class Button extends React.Component {
   render() {
-    const { number, color } = this.props;
-    return (
-      <button type="button" className={color}>
-        {' '}
-        {number}
-        {' '}
-      </button>
+    const { buttonName } = this.props;
 
+    return (
+      <p className="button">{buttonName}</p>
     );
   }
 }
 
-Button.prototypes = {
-  color: PropTypes.bool,
-  number: PropTypes.array,
+Button.propTypes = {
+  buttonName: PropTypes.string.isRequired,
 };
-
-Button.defaultProps = {
-  number: 0,
-  color: false,
-};
-
-export default Button;
