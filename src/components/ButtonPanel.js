@@ -28,6 +28,12 @@ class ButtonPanel extends React.Component {
                 <Button number="6" color="btn-white btn" />
                 <Button number="-" color="btn-yellow btn" />
             </div>
+            <div className="btn-group">
+                <Button number="1" color="btn-white btn" />
+                <Button number="2" color="btn-white btn" />
+                <Button number="3" color="btn-white btn" />
+                <Button number="+" color="btn-yellow btn" />
+                </div>
 
         );
     }
