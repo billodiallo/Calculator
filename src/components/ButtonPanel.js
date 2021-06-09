@@ -45,3 +45,5 @@ class ButtonPanel extends React.Component {
         );
     }
 }
+
+export default ButtonPanel;
