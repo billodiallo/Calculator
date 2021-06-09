@@ -3,6 +3,7 @@ import ProtoTypes from 'prop-types';
 
 class Display extends React.Component {
     render() {
+        // eslint-disable-next-line react/prop-types
         const { result } = this.props;
         return (
             <div className= 'result-card'>

@@ -1,28 +1,31 @@
+/* eslint-disable react/prefer-stateless-function */
+/* eslint-disable react/prop-types */
 import React from 'react';
-import Prototypes, { number } from 'prop-types';
+import PropTypes from 'prop-types';
+
 
 class Button extends React.Component {
-    render(){
-        constant { number, color } = this.props;
-        return (
-            <button type="button" className={color}>
-                {' '}
-                {number}
-                {' '}
-            </button>
-        );
+  render() {
+    const { number, color } = this.props;
+    return (
+      <button type="button" className={color}>
+        {' '}
+        {number}
+        {' '}
+      </button>
 
-    }
+    );
+  }
 }
 
-Button.Prototypes = {
-    color : Prototypes.bool,
-    number : Prototypes.array,  
+Button.prototypes = {
+  color: PropTypes.bool,
+  number: PropTypes.array,
 };
 
 Button.defaultProps = {
-    number: 0,
-    color: false,
-  };
+  number: 0,
+  color: false,
+};
 
-  export default Button;
+export default Button;

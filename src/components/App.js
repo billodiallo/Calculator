@@ -1,20 +1,14 @@
-// import React from 'react';
+import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 
-function App() {
-return (
-    <div className="container">
-        <div className="main-intro">
-            <div className="results-card">
-           <Display/>
-           </div>
-           <div className="button-field">
-               <ButtonPanel/>
-           </div>
-        </div>
-    </div>
-)
-}
+const calculate = (a, b) => a + b;
+
+const App = () => (
+  <>
+    <Display result={calculate(5, 3).toString()} />
+    <ButtonPanel />
+  </>
+);
 
 export default App;
