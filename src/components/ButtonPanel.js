@@ -10,7 +10,8 @@ class ButtonPanel extends React.Component {
                     <Button number="AC" color="btn-dark btn" />
                     <Button number="+/-" color="btn-dark btn" />
                     <Button number="%" color="btn-dark btn" />
-                    <Button number="÷" color="btn-yellow btn" />  
+                    <Button number="÷" color="btn-yellow btn" />
+                    {' '}  
                 </div>
             </div>
 
