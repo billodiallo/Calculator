@@ -10,4 +10,10 @@ const calculate = (dataObjet,buttonName) => {
         total = operate(total, next, operation);
         break;
 
+        case 'AC':
+        total = '0';
+        next = null;
+        operation = null;
+        break;
+
 }
