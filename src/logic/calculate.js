@@ -15,5 +15,10 @@ const calculate = (dataObjet,buttonName) => {
         next = null;
         operation = null;
         break;
+        
+        case '+/-':
+            total *= -1;
+            next *= -1;
+            break;
 
 }
