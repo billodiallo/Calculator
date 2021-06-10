@@ -3,9 +3,12 @@ const operate = (numberone,numbertwo,operation) => {
     const firstValue = Big(numberone);
     const secondValue = Big(numbertwo);
 
-    if (operate == '-' {
+    if (operation == '-') {
         return firstValue.minus(secondValue);
 
+    }
+    if  (operation == '+') {
+        return firstValue.plus(secondValue);
     }
 
 }
