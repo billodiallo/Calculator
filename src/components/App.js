@@ -8,7 +8,7 @@ const calculate = (a, b) => a + b;
 
 const App = () => (
   <>
-    <Display result={calculate(5, 3).toString()} />
+    <Display result={calculate(0, 0).toString()} />
     <ButtonPanel />
   </>
 );

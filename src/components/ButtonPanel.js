@@ -7,7 +7,7 @@ import Button from './Button';
         this.props = props;
         this.state = {
           buttonGroups: [
-            { buttons: ['AC', '-', '%', '/'] },
+            { buttons: ['AC', '+/-', '%', '/'] },
             { buttons: ['7', '8', '9', 'X'] },
             { buttons: ['4', '5', '6', '-'] },
             { buttons: ['1', '2', '3', '+'] },
