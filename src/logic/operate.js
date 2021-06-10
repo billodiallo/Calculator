@@ -15,6 +15,17 @@ const operate = (numberone,numbertwo,operation) => {
         return firstValue.times(secondValue);
     }
 
-}
+    if (operation == '%') {
+        return firstValue.div(100);
+    }
+
+    if (operation === '/') {
+        if (parseInt(secondValue, 10) === 0) { return "You can't divide a number by zero"; }
+        return firstValue.div(secondValue);
+      }
+    
+      return null;
+    };
+
 
 export default operate;
