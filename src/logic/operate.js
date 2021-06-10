@@ -11,6 +11,10 @@ const operate = (numberone,numbertwo,operation) => {
         return firstValue.plus(secondValue);
     }
 
+    if (operation == 'x') {
+        return firstValue.times(secondValue);
+    }
+
 }
 
 export default operate;
