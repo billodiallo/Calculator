@@ -20,7 +20,8 @@ const operate = (numberone,numbertwo,operation) => {
     }
 
     if (operation === '/') {
-        if (parseInt(secondValue, 10) === 0) { return "You can't divide a number by zero"; }
+        if (parseInt(secondValue, 10) === 0) 
+        { return "You can't divide a number by zero"; }
         return firstValue.div(secondValue);
       }
     

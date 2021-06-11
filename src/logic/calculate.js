@@ -3,8 +3,9 @@ import operate from './operate';
 const calculate = (dataObj, buttonName) => {
   let { total, next, operation } = dataObj;
   const prevTotal = total;
+const numberArr = ['0','1','2','3','4','5','6','7','8','9']
+const operationArr = ['+/-', '/', 'x', '*', '+', '-', '%', '=']
 
-  if (['+/-', '/', 'x', '*', '+', '-', '%', '='].includes(buttonName)) {
     switch (buttonName) {
       case '=':
         total = operate(total, next, operation);
@@ -40,6 +41,6 @@ const calculate = (dataObj, buttonName) => {
     next,
     operation,
   };
-};
+
 
 export default calculate;
