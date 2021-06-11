@@ -2,6 +2,7 @@ import Big from 'big.js';
 const operate = (numberone,numbertwo,operation) => {
     const firstValue = Big(numberone);
     const secondValue = Big(numbertwo);
+    let result = null;
 
     if (operation == '-') {
         return firstValue.minus(secondValue);
