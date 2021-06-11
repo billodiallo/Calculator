@@ -42,7 +42,14 @@ const operationsArr = ['+/-', '/', 'x', '*', '+', '-', '%', '=']
           total = next;
           next = null;
         }
-        
+        if (buttonName !== '=') {
+          operation = buttonName;
+        } else {
+          operation = null;
+        }
+      }
+    
+      
 
   return {
     total,
