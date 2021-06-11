@@ -48,7 +48,13 @@ const operationsArr = ['+/-', '/', 'x', '*', '+', '-', '%', '=']
           operation = null;
         }
       }
-    
+      if (numbersArr.includes(buttonName)) {
+        if (next != null) {
+          next += buttonName;
+        } else {
+          next = buttonName;
+        }
+      }   
       
 
   return {
