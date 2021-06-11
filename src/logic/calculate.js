@@ -7,18 +7,17 @@ const numberArr = ['0','1','2','3','4','5','6','7','8','9']
 const operationArr = ['+/-', '/', 'x', '*', '+', '-', '%', '=']
 
     switch (buttonName) {
-      case '=':
-        total = operate(total, next, operation);
-        break;
       case 'AC':
-        total = '0';
+        total = null;
         next = null;
         operation = null;
         break;
+
       case '+/-':
-        total *= -1;
         next *= -1;
+        total *= -1;
         break;
+
       case '/': case 'x': case '+': case '-': case '%':
         operation = buttonName;
         break;
@@ -30,10 +29,7 @@ const operationArr = ['+/-', '/', 'x', '*', '+', '-', '%', '=']
         break;
     }
   } 
-  else {
-    next = next.toString() + buttonName.toString();
-    next = next.toNumber();
-  }
+ 
 
   return {
     prevTotal,
