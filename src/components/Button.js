@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import operate from '../logic/operate';
+
 
 export default class Button extends Component {
   constructor(props) {
@@ -9,23 +9,30 @@ export default class Button extends Component {
   }
 
   render() {
+    // eslint-disable-next-line react/prop-types
     const { buttonName, handleClick } = this.props;
     let btnStyle = 'normal-button';
-    if (['/','-','+','=','+/-','%'].includes(buttonName)){
+    if (['/', 'x', '-', '+', '=', '+/-', '%'].includes(buttonName)) {
       btnStyle = 'operation-button';
     }
 
     return (
-      <button type="button"
-      onClick={() => handleClick(buttonName)}
-    )
-
-    return (
-      <p className="button">{buttonName}</p>
+      <button
+        type="button"
+        onClick={() => handleClick(buttonName)}
+        className={btnStyle}
+      >
+        {buttonName}
+      </button>
     );
   }
 }
+Button.defaultProps = {
+  handleClick: null,
+};
 
 Button.propTypes = {
   buttonName: PropTypes.string.isRequired,
+  handleClick: PropTypes.func,
+
 };
