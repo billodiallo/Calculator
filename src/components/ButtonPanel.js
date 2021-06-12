@@ -18,8 +18,9 @@ import Button from './Button';
 
       render () {
         let buttonsView = [];
+        const {buttonGroups} = this.state;
+        const {clickHandler} = this.props;
 
-        const { buttonGroups } = this.state;
         buttonsView = (
           <div>
             {buttonGroups.map(group => (
