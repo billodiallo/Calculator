@@ -13,7 +13,19 @@ class App extends Component {
       next: null,
       operation: null,
     };
-  }
+  
+
+
+this.handleClick = buttonName => {
+  const {total,next,operation} = calculate(this.state, buttonName);
+  this.setState({
+    total,
+    next,
+    operation,
+  });
+};
 }
+
+
 
 export default App;
