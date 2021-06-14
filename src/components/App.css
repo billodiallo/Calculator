@@ -18,11 +18,26 @@
   justify-content: center;
   font-size: 34px;
   color: rgb(255, 255, 255);
-  background-color: rgb(92, 92, 92);
+  background-color: rgb(0, 0, 255);
   border-radius: 0.7rem;
 }
 
 .normal-button:hover {
   background-color: #fff;
   color: rgb(44, 44, 44);
+}
+
+.operation-button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid;
+  padding: 30px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(226, 145, 24);
+  border-radius: 0.7rem;
 }
