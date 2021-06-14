@@ -59,9 +59,15 @@
 }
 
 .calculator {
-  width: max-content;
   border: 1px solid;
   border-radius: 0.8rem;
   padding: 20px;
   background-color: #fff;
+}
+
+#root {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
