@@ -8,7 +8,8 @@
 ## Screenshot
 <img src="./docs/screenshot.JPG" width="40%" height="auto" />
 
-## Live Demo on heroku
+## Live Demo 
+
 [Clic here](https://calculator-machine.herokuapp.com/)
 ## Built With
 
