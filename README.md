@@ -21,6 +21,9 @@
 - ESLint
 - StyleLint
 
+## Packages
+- [BigJS](https://github.com/MikeMcl/big.js/)
+- [PropTypes](https://www.npmjs.com/package/prop-types)
 
 ## Prerequisities
 
