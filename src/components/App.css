@@ -46,3 +46,14 @@
   background-color: #fff;
   color: rgb(44, 44, 44);
 }
+
+.display {
+  height: 40px;
+  padding: 15px;
+  background-color: rgb(224, 195, 156);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 36px;
+  border-radius: 0.8rem;
+}
