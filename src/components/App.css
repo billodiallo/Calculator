@@ -21,3 +21,8 @@
   background-color: rgb(92, 92, 92);
   border-radius: 0.7rem;
 }
+
+.normal-button:hover {
+  background-color: #fff;
+  color: rgb(44, 44, 44);
+}
