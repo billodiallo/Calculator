@@ -5,14 +5,25 @@
 
 ![Hireable](https://img.shields.io/badge/Hireable-yes-success) ![](https://img.shields.io/badge/Mobile--responsive-yes-green) ![](https://img.shields.io/badge/-Microverse%20projects-blueviolet)
 
+## Screenshot
+<img src="./docs/screenshot.JPG" width="40%" height="auto" />
 
+## Live Demo 
+
+[Clic here](https://calculator-machine.herokuapp.com/)
 ## Built With
 
-- npm
-- Github Actions
-- Stylelint
+- [JavaScript ES6](https://www.javascript.com/) 
+- [React](https://reactjs.org/)
+- [create-react-app](https://github.com/facebook/create-react-app)
+- HTML and CSS
+- [NPM](https://www.npmjs.com/)
 - ESLint
+- StyleLint
 
+## Packages
+- [BigJS](https://github.com/MikeMcl/big.js/)
+- [PropTypes](https://www.npmjs.com/package/prop-types)
 
 ## Prerequisities
 

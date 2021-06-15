@@ -9,10 +9,17 @@ class Display extends Component {
 
 
     render() {
-        // eslint-disable-next-line react/prop-types
-        const { result } = this.props;
+      
+        let { result } = this.props;
+        if (result === null) {
+            result = 0;
+        }
         return (
-                <p >{result}</p>
+            <div className = "display">
+                 <p >{result}</p>
+
+            </div>
+               
            
         );
     }

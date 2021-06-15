@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+
 export default class Button extends Component {
   constructor(props) {
     super(props);
@@ -8,14 +9,30 @@ export default class Button extends Component {
   }
 
   render() {
-    const { buttonName } = this.props;
+    // eslint-disable-next-line react/prop-types
+    const { buttonName, handleClick } = this.props;
+    let btnStyle = 'normal-button';
+    if (['/', 'x', '-', '+', '=', '+/-', '%'].includes(buttonName)) {
+      btnStyle = 'operation-button';
+    }
 
     return (
-      <p className="button">{buttonName}</p>
+      <button
+        type="button"
+        onClick={() => handleClick(buttonName)}
+        className={btnStyle}
+      >
+        {buttonName}
+      </button>
     );
   }
 }
+Button.defaultProps = {
+  handleClick: null,
+};
 
 Button.propTypes = {
   buttonName: PropTypes.string.isRequired,
+  handleClick: PropTypes.func,
+
 };
