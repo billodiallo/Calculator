@@ -1,32 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
+const Button = props => {
+  const { buttonName, handleClick } = props;
+  let btnStyle = 'normal-button';
 
-export default class Button extends Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
+  if (['/', 'x', '-', '+', '=', '+/-', '%'].includes(buttonName)) {
+    btnStyle = 'operation-button';
   }
 
-  render() {
-    // eslint-disable-next-line react/prop-types
-    const { buttonName, handleClick } = this.props;
-    let btnStyle = 'normal-button';
-    if (['/', 'x', '-', '+', '=', '+/-', '%'].includes(buttonName)) {
-      btnStyle = 'operation-button';
-    }
+  return (
+    <button
+      type="button"
+      onClick={() => handleClick(buttonName)}
+      className={btnStyle}
+    >
+      {buttonName}
+    </button>
+  );
+};
 
-    return (
-      <button
-        type="button"
-        onClick={() => handleClick(buttonName)}
-        className={btnStyle}
-      >
-        {buttonName}
-      </button>
-    );
-  }
-}
 Button.defaultProps = {
   handleClick: null,
 };
@@ -34,5 +27,6 @@ Button.defaultProps = {
 Button.propTypes = {
   buttonName: PropTypes.string.isRequired,
   handleClick: PropTypes.func,
-
 };
+
+export default Button;
