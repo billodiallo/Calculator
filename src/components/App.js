@@ -11,7 +11,7 @@ const App = ()  => {
     next:null,
     operation:null,
   }]);
-}
+
 
     this.handleClick = buttonName => {
       const { total, next, operation } = calculate(this.state, buttonName);
@@ -20,8 +20,25 @@ const App = ()  => {
         next,
         operation,
       });
-    };
-  }
+
+
+  const handleClick = useCallback(
+    buttonName => {
+      const { total, next, operation} = calculate(state,buttonName);
+      setState({
+        total,
+        next,
+        operation,
+      });
+    }, [state],
+  );
+
+
+    }
+
+
+  )
+
 
   render() {
     const { total, next } = this.state;
