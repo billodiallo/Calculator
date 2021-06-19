@@ -13,15 +13,6 @@ const App = ()  => {
   }]);
 
 
-    this.handleClick = buttonName => {
-      const { total, next, operation } = calculate(this.state, buttonName);
-      this.setState({
-        total,
-        next,
-        operation,
-      });
-
-
   const handleClick = useCallback(
     buttonName => {
       const { total, next, operation} = calculate(state,buttonName);
@@ -34,14 +25,7 @@ const App = ()  => {
   );
 
 
-    }
-
-
-  )
-
-
-  render() {
-    const { total, next } = this.state;
+  const { total, next} = state;
 
     return (
       <>
