@@ -7,11 +7,12 @@ import Navbar from './components/Navbar';
 
 const Routes = () => (
     <BrowserRouter>
-    <Navbar/>
+    <Navbar />
     <Switch>
-        <Route path= "/calculator" component={App}></Route>
-        <Route  path = "/quote" component = {Quote}> </Route>
-        <Route path = "/" component = {Home} ></Route>
+        <Route path= "/calculator" component={App} />
+        <Route path= "/quote" component = {Quote}/>
+        <Route path= "/" component = {Home} />
+        
     </Switch>
     </BrowserRouter>
 
