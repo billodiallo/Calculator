@@ -6,7 +6,7 @@
 ![Hireable](https://img.shields.io/badge/Hireable-yes-success) ![](https://img.shields.io/badge/Mobile--responsive-yes-green) ![](https://img.shields.io/badge/-Microverse%20projects-blueviolet)
 
 ## Screenshot
-<img src="./docs/screenshot.JPG" width="40%" height="auto" />
+<img src="./docs/scree.JPG" width="40%" height="auto" />
 
 ## Live Demo 
 
