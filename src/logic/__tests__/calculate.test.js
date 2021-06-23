@@ -18,4 +18,13 @@ it('should return null for total, for next and for operation when AC is clicked'
       operation: null,
     });
   });
+
+  it('should return 11 when equal is clicked', () => {
+    const result = calculate(currentState, '=');
+    expect(result).toEqual({
+      total: '11',
+      next: null,
+      operation: null,
+    });
+  });
 });
