@@ -3,7 +3,7 @@
 exports[`Button Panel should render the Button panel component 1`] = `
 <div>
   <div
-      className="button-panel"
+    className="button-panel"
   >
     <div
       className="button-list"
