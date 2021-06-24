@@ -29,4 +29,14 @@ describe('Operation Test', () => {
         expect(result).toEqual(515);
       });
 
+      it('should return 4.505, if "/" is given as operator', () => {
+        const result = operate(firstNumber, -111, '/');
+        expect(result).toEqual(-4.505);
+      });
+    
+      it('should return "You cant divide a number by zero! " warning when trying to devide a number by zero', () => {
+        const result = operate(firstNumber, 0, '/');
+        expect(result).toEqual("You can't divide a number by zero!");
+      });
+
     });
