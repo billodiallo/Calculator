@@ -55,12 +55,5 @@ it('should return null for total, for next and for operation when AC is clicked'
     });
   });
 
-  it('should return 11 for the total value', () => {
-    const result = calculate(currentState, '=');
-    expect(result).toEqual({
-      total: '11',
-      next: null,
-      operation: null,
-    });
-  });
+
 });
