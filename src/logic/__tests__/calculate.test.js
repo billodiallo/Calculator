@@ -55,5 +55,24 @@ it('should return null for total, for next and for operation when AC is clicked'
     });
   });
 
+  it('should return -1 for the total value', () => {
+    currentState.operation = '-';
+    const result = calculate(currentState, '=');
+    expect(result).toEqual({
+      total: '-1',
+      next: null,
+      operation: null,
+    });
+  });
+
+  it('should return 0.833 for the total value', () => {
+    currentState.operation = '/';
+    const result = calculate(currentState, '=');
+    expect(result).toEqual({
+      total: '0.833',
+      next: null,
+      operation: null,
+    });
+  });
 
 });
