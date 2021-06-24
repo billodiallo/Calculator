@@ -75,4 +75,14 @@ it('should return null for total, for next and for operation when AC is clicked'
     });
   });
 
+  it('should return 30 for the total value', () => {
+    currentState.operation = 'x';
+    const result = calculate(currentState, '=');
+    expect(result).toEqual({
+      total: '30',
+      next: null,
+      operation: null,
+    });
+  });
+
 });
