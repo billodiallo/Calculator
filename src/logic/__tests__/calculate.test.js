@@ -36,4 +36,13 @@ it('should return null for total, for next and for operation when AC is clicked'
       operation: '+',
     });
   });
+
+  it('should return 6. for the next value', () => {
+    const result = calculate(currentState, '.');
+    expect(result).toEqual({
+      total: '5',
+      next: '6.',
+      operation: '+',
+    });
+  });
 });
