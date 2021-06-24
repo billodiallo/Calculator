@@ -14,4 +14,9 @@ describe('Operation Test', () => {
         expect(result).toEqual(33.333);
       });
 
+      it('should return 7500, if "x" is given as operator', () => {
+        const result = operate(firstNumber, secondNumber, 'x');
+        expect(result).toEqual(7500);
+      });
+
     });
