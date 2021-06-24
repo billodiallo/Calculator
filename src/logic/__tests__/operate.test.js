@@ -19,4 +19,14 @@ describe('Operation Test', () => {
         expect(result).toEqual(7500);
       });
 
+      it('should return -485, if "-" is given as operator', () => {
+        const result = operate(firstNumber, secondNumber, '-');
+        expect(result).toEqual(485);
+      });
+    
+      it('should return 515, if "+" is given as operator.', () => {
+        const result = operate(firstNumber, secondNumber, '+');
+        expect(result).toEqual(515);
+      });
+
     });
