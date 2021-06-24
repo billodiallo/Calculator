@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import  calculate from '../calculate';
 
 describe('Calculate Logic tests', () => {

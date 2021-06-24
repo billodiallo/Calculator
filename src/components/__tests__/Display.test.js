@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';

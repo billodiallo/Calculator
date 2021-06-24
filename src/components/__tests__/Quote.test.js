@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 import Quote from '../Quote';
 
